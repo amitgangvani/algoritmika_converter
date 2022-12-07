@@ -66,7 +66,7 @@ const beautifyString = (str) => {
         str = str.slice(0,length-1)
     }
     if(str[0] === '0' && str.length > 1 && str[1] !== '.'){
-        str = str.slice(1,length)
+        str = str.slice(0,length-1)
     }
 
     return str
