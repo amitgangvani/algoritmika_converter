@@ -18,8 +18,8 @@ const getRates = async () => {
     rates = data.rates;
 
     toAmount.value = fromAmount.value * rates[symbols]
-    fromRate.innerText = `1 ${base} = ${rates[symbols]} ${symbols}`
-    toRate.innerText = `1 ${symbols} = ${1/rates[symbols]} ${base}`
+    fromRate.innerText = `1 ${base} = ${Number(rates[symbols]).toFixed(4)} ${symbols}`
+    toRate.innerText = `1 ${symbols} = ${Number(1/rates[symbols]).toFixed(4)} ${base}`
 
 }
 
