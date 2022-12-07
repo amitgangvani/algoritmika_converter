@@ -17,7 +17,7 @@ const getRates = async () => {
     let data = await response.json();
     rates = data.rates;
 
-    toAmount.value = fromAmount.value * rates[symbols]
+    toAmount.value = Number(fromAmount.value * rates[symbols]).toFixed(4)
     fromRate.innerText = `1 ${base} = ${Number(rates[symbols]).toFixed(4)} ${symbols}`
     toRate.innerText = `1 ${symbols} = ${Number(1/rates[symbols]).toFixed(4)} ${base}`
 
