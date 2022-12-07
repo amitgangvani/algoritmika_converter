@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My converter</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img src="src/logo.png" alt="">
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="bold">Банк</a></li>
+                <li><a href="#">Бизнес</a></li>
+                <li><a href="#">Инвестиция</a></li>
+                <li><a href="#">Страхование</a></li>
+                <li><a href="#">Мобайл</a></li>
+                <li><a href="#">Путешествия</a></li>
+                <li><a href="#">Развлечения</a></li>
+            </ul>
+            <div class="loginBtn">
+                <a href="#">Войти</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Конвертер валют онлайн
+        </h1>
+        <div class="converter">
+            <div>
+                <h2>У меня есть</h2>
+                <ul class="fromRates switchers">
+                    <li><a href="#" class="selected">RUB</a></li>
+                    <li><a href="#">USD</a></li>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">GBP</a></li>
+                </ul>
+                <div class="amountBox">
+                    <input id="fromAmount" value="1" type="text" >
+                    <h3 id="fromRate"></h3>
+                </div>
+            </div>
+            <div>
+                <h2>У меня есть</h2>
+                <ul class="toRates switchers">
+                    <li><a href="#">RUB</a></li>
+                    <li><a href="#" class="selected">USD</a></li>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">GBP</a></li>
+                </ul>
+                <div class="amountBox">
+                    <input type="text" id="toAmount">
+                    <h3 id="toRate"></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
